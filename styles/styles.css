@@ -32,21 +32,75 @@ flex-direction: row;
 justify-content: space-between
 }
 
+.logo{
+  position: relative;
+  top: 43.5px;
+  left: 10vw;
+}
 
 .logo img{
-  position: relative;
-  height: 80px;
-  top: 30px;
-  left: 20px;
-}
-  
-.right-side-wrapper{
-  position: relative;
-  top: 60px;
-  right: 50px;
+  height: 100px;
 }
 
-.right-side-wrapper a{
-  color: white;
-  text-decoration: none;
+.desktop-menu-wrapper{
+  display: none;
+}
+
+.menu-icon-wrapper{
+  position: relative;
+  top: 70px;
+  right: 10vw;
+}
+
+.menu-icon-element{
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.first-slider-elements{
+  position: absolute;
+  z-index: 10;
+}
+
+.first-slider-texts{
+  position: relative;
+  top: 400px;
+  left: 10vw;
+}
+
+.first-slider-texts p:first-child{
+  color: white
+}
+
+.first-slider-texts p:nth-child(2){
+  color: blue
+}
+@media only screen and (min-width: 1220px){
+  .menu-icon-wrapper{
+    display: none;
+  }
+
+  .logo{
+    height: 130px;
+  }
+
+  .logo img{
+    height: 130px;
+  }
+    
+  .desktop-menu-wrapper{
+    display: block;
+    position: relative;
+    top: 88px;
+    right: 5vw;
+  }
+  
+  .desktop-menu-wrapper a{
+    color: white;
+    text-decoration: none;
+    font-size: 17.5px;
+    margin-right: 90px;
+  }
 }
