@@ -1,14 +1,26 @@
 .final-sector-wrapper{
-  height: 40vh;
+  height: 50vh;
   background-color: #001927;
 }
 
+.map-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+
+.map-wrapper p{
+  color: white;
+}
 
 #map {
-  height: 200px;
+  height: 140px;
   /* The height is 400 pixels */
-  width: 200px;
+  width: 140px;
   /* The width is the width of the web page */
   border-radius: 50%;
+}
+
+.author-wrapper{
+  color: white;
 }
 
