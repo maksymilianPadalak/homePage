@@ -1,0 +1,44 @@
+.first-sector-wrapper{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-sector-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-sector-wrapper h1{
+  color: #002841;
+  position: relative;;
+  right: 300px;
+}
+
+.first-sector-wrapper p{
+  margin: 15px;
+  color: #494949;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.first-sector-description-wrapper{
+  display: none;
+  opacity: 0;
+}
+
+.first-sector-requirements-wrapper{
+  position: relative;
+  left: -1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
