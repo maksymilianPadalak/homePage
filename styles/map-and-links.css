@@ -1,0 +1,14 @@
+.final-sector-wrapper{
+  height: 40vh;
+  background-color: #001927;
+}
+
+
+#map {
+  height: 200px;
+  /* The height is 400 pixels */
+  width: 200px;
+  /* The width is the width of the web page */
+  border-radius: 50%;
+}
+

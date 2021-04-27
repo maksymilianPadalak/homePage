@@ -1,0 +1,47 @@
+.contact-wrapper{
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f8fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contact-wrapper input{
+  height: 30px;
+  border: none;
+}
+
+.contact-wrapper textarea{
+  border: none;
+}
+
+
+.contact-wrapper input:focus{
+  outline-width: 0;
+}
+
+.contact-wrapper textarea:focus{
+  outline-width: 0;
+}
+
+.contact-input-wrapper:hover{
+  box-shadow: 5px 5px 5px rgb(211, 211, 211);
+  cursor: pointer;
+}
+
+.contact-input-wrapper{
+  background-color: white;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.agreement{
+  display: flex;
+  flex-direction: row;
+}

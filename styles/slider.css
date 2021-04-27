@@ -165,7 +165,7 @@ justify-content: space-between
   margin-top: 5px;
 }
 
-.buttons-wrapper{
+.slider-buttons-wrapper{
   position: absolute;
   top: 100px;
   left: 19vw;
@@ -173,7 +173,7 @@ justify-content: space-between
   flex-direction: column;
 }
 
-.buttons-wrapper button{
+.slider-buttons-wrapper button{
   margin-top: 20px;
   border: 2px solid white;
   border-radius:2em;
@@ -183,7 +183,7 @@ justify-content: space-between
   width: 180px;
 }
 
-.buttons-wrapper button:hover{
+.slider-buttons-wrapper button:hover{
   background-color: white;
   color: black;
 }
@@ -237,13 +237,7 @@ justify-content: space-between
     color: grey;
   }
 
-  /* .buttons-wrapper{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 0;
-  } */
-  .buttons-wrapper button{
+  .slider-buttons-wrapper button{
     border: 2px solid white;
     border-radius:2em;
     color: white;

@@ -1,0 +1,26 @@
+.second-sector-wrapper{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.second-sector-text-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-sector-wrapper h1{
+  color: #002841;
+  position: relative;;
+}
+
+.second-sector-wrapper p{
+  margin: 15px;
+  color: #494949;
+  font-size: 13px;
+  line-height: 20px;
+}
