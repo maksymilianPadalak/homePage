@@ -1,8 +1,14 @@
+@font-face{
+  font-family: "Muli";
+  src: url("/fonts/Muli") format(ttf),
+}
+
+
 body{
 margin-top: 0;
 margin-left: 0;
 margin-right: 0;
-font-family: 'Muli'
+font-family: "Muli", sans-serif;
 }
 
 /* Remove decoraction and purple color from every hyperlink */
@@ -156,6 +162,15 @@ justify-content: space-between
 
 .mobile-menu-wrapper a{
   margin-top: 5px;
+}
+
+.buttons-wrapper button{
+  border: 2px solid white;
+  border-radius:2em;
+  color: white;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
 }
 
 .arrows-wrapper{
