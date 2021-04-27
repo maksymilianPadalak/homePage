@@ -2,17 +2,55 @@ const firstDot = document.querySelector(".dot");
 const secondDot = firstDot.nextElementSibling;
 const thirdDot = secondDot.nextElementSibling;
 const fourthDot = thirdDot.nextElementSibling;
+const dots = [firstDot, secondDot, thirdDot, fourthDot]
 
-firstDot.style.backgroundColor = "#ffcd19";
 
-// const btn = document.querySelector('button')
+const firstSliderImg = document.querySelector('.first-slider-image')
+const secondSliderImg = document.querySelector('.second-slider-image')
+const thirdSliderImg = document.querySelector('.third-slider-image')
+const fourthSliderImg = document.querySelector('.fourth-slider-image')
+const sliderImages = [firstSliderImg, secondSliderImg, thirdSliderImg, fourthSliderImg]
 
-// btn.addEventListener('click', () => {
-//   gsap.to('.first-slider-image', { duration: 1, opacity: 0, display: 'none'});
-//   gsap.to('.second-slider-image', { duration: 1, opacity: 1, display: 'block'});
-//   firstDot.style.backgroundColor = 'white'
-//   secondDot.style.backgroundColor = '#ffcd19'
-// })
+
+//arrows
+
+const leftArrow = document.querySelector('.arrow-left')
+const rightArrow = document.querySelector('.arrow-right')
+let currentSliderImg = 1
+
+firstDot.style.backgroundColor = '#ffcd19'
+
+rightArrow.addEventListener('click', () => {
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 0, display: 'none'});
+  dots[currentSliderImg-1].style.backgroundColor = 'white';
+  if (currentSliderImg === 4){
+    currentSliderImg = 1
+  } else {
+    currentSliderImg += 1
+  }
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 1, display: 'block'});
+  dots[currentSliderImg-1].style.backgroundColor = '#ffcd19'
+})
+
+leftArrow.addEventListener('click', () => {
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 0, display: 'none'});
+  dots[currentSliderImg-1].style.backgroundColor = 'white';
+  if (currentSliderImg === 1){
+    currentSliderImg = 4
+  } else {
+    currentSliderImg -= 1
+  }
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 1, display: 'block'});
+  dots[currentSliderImg-1].style.backgroundColor = '#ffcd19'
+})
+
+//function to change images easly when back-end is ready
+
+const changeSliderImg = (imgNumber, imgSrc) => {
+  sliderImages[imgNumber-1].firstElementChild.src = imgSrc
+}
+
+//mobile menu handler
 
 const mobileMenuIcon = document.querySelector(".mobile-menu-icon-wrapper");
 let mobileMenuStatus = "closed";
