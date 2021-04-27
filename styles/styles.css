@@ -5,17 +5,23 @@ margin-right: 0;
 font-family: 'Muli'
 }
 
+/* Remove decoraction and purple color from every hyperlink */
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
 .slider-wrapper{
   height: 100vh;
   width: 100vw;
-  display: flex;
-  position: relative;
   }
   
 .first-slider-image{
   position: absolute;
   display: block;
   opacity: 1;
+  z-index: -10;
 }
 
 .first-slider-image img{
@@ -41,7 +47,6 @@ font-family: 'Muli'
 .top-bar-wrapper{
 width: 100vw;
 position: absolute;
-z-index: 10;
 display: flex;
 flex-direction: row;
 justify-content: space-between
@@ -51,6 +56,7 @@ justify-content: space-between
   position: relative;
   top: 43.5px;
   left: 10vw;
+  display: block;
 }
 
 .logo img{
@@ -61,13 +67,13 @@ justify-content: space-between
   display: none;
 }
 
-.menu-icon-wrapper{
-  position: relative;
+.mobile-menu-icon-wrapper{
+  position: absolute;
   top: 70px;
   right: 10vw;
 }
 
-.menu-icon-element{
+.mobile-menu-icon-element{
   width: 35px;
   height: 4px;
   background-color: white;
@@ -76,11 +82,6 @@ justify-content: space-between
 
 .first-slider-elements{
   position: absolute;
-  z-index: 10;
-}
-
-.first-slider-texts{
-  position: relative;
   top: 400px;
   left: 10vw;
 }
@@ -96,7 +97,7 @@ justify-content: space-between
 .dots{
   position: absolute;
   left: 90vw;
-  top: 300px;
+  top: 40vh;
   display: flex;
   flex-direction: column;
 }
@@ -110,20 +111,29 @@ justify-content: space-between
   margin-top: 30px;
 }
 
-.buttons-wrapper{
+.mobile-menu-wrapper{
   position: absolute;
-  z-index: 10;
-  top: 500px;
-  left: 200px;
+  opacity: 0;
+  top: 180px;
+  left: -20px;
+  height: 170px;
+  width: 50vw;
+  background: rgba(255, 255, 255, 0.589);
+  display: none;
+  /* change to flex when visible */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+
 }
 
-button{
-  height: 100px;
-  width: auto;
+.mobile-menu-wrapper a{
+  margin-top: 5px;
 }
 
 @media only screen and (min-width: 1220px){
-  .menu-icon-wrapper{
+  .mobile-menu-icon-wrapper{
     display: none;
   }
 
@@ -139,13 +149,15 @@ button{
     display: block;
     position: relative;
     top: 88px;
-    right: 5vw;
+    right: 10vw;
   }
   
   .desktop-menu-wrapper a{
-    color: white;
-    text-decoration: none;
     font-size: 17.5px;
     margin-right: 90px;
+  }
+
+  .desktop-menu-wrapper a:hover{
+    color: grey;
   }
 }
