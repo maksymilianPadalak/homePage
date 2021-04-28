@@ -118,15 +118,21 @@ justify-content: space-between
   font-size: 2vh;
 }
 
+.first-slider-texts p{
+  margin-block-end: 0;
+}
 
 .first-slider-texts p:first-child{
   color: white;
   font-weight: lighter;
+  margin-block-start: 0;
 }
 
 .first-slider-texts p:nth-child(2){
+  margin: none;
   color: rgb(49, 154, 240);
   font-weight: lighter;
+  margin-top: 5px;
 }
 
 .dots{
@@ -195,6 +201,18 @@ justify-content: space-between
 .arrow-left{
   transform: scaleX(-1);
 }
+
+/* Tablet styling */
+
+@media only screen and (min-width: 700px){
+
+  .first-slider-texts p{
+    font-size: 30px;
+  }
+
+}
+
+/*Desktop styling*/
 
 @media only screen and (min-width: 1220px){
   .mobile-menu-icon-wrapper{

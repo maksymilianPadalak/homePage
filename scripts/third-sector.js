@@ -5,7 +5,7 @@ gsap.to(".third-sector-text-wrapper", {
     toggleActions: "play complete reverse reset",
   },
   opacity: 1,
-  duration: 1.5,
+  duration: 2.5,
   ease: "bounce.out",
-  x: 500,
+  x: 1000,
 });
