@@ -1,16 +1,26 @@
 .final-sector-wrapper{
-  height: 50vh;
   background-color: #001927;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .map-wrapper{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+
+.adress-wrapper{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .map-wrapper p{
   color: white;
+  margin: 0;
 }
 
 #map {
@@ -19,9 +29,38 @@
   width: 140px;
   /* The width is the width of the web page */
   border-radius: 50%;
+  margin-top: 30px;
+}
+
+.final-sector-links-wrapper{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.links-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.links-group a{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.links-group a:first-child{
+  font-weight: bold;
 }
 
 .author-wrapper{
   color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 10px;
 }
-

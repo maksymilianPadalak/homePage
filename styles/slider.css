@@ -120,12 +120,13 @@ justify-content: space-between
 
 
 .first-slider-texts p:first-child{
-  color: white
-
+  color: white;
+  font-weight: lighter;
 }
 
 .first-slider-texts p:nth-child(2){
-  color: rgb(49, 154, 240)
+  color: rgb(49, 154, 240);
+  font-weight: lighter;
 }
 
 .dots{
