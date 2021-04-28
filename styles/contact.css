@@ -18,15 +18,6 @@
   border: none;
 }
 
-
-.contact-wrapper input:focus{
-  outline-width: 0;
-}
-
-.contact-wrapper textarea:focus{
-  outline-width: 0;
-}
-
 .contact-input-wrapper:hover{
   box-shadow: 5px 5px 5px rgb(211, 211, 211);
   cursor: pointer;
@@ -35,6 +26,15 @@
 .contact-input-wrapper{
   background-color: white;
   height: 50px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-textarea-wrapper{
+  background-color: white;
+  height: 200px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;

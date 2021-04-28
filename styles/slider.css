@@ -1,22 +1,3 @@
-@font-face{
-  font-family: "Muli";
-  src: url("/fonts/Muli/Muli-Regular.ttf") format(ttf),
-}
-
-body{
-margin-top: 0;
-margin-left: 0;
-margin-right: 0;
-font-family: "Muli", sans-serif;
-}
-
-/* Remove decoraction and purple color from every hyperlink */
-
-a{
-  color: white;
-  text-decoration: none;
-}
-
 .slider-wrapper{
   height: 100vh;
   width: 100vw;

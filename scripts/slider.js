@@ -16,33 +16,41 @@ const sliderImages = [firstSliderImg, secondSliderImg, thirdSliderImg, fourthSli
 
 const leftArrow = document.querySelector('.arrow-left')
 const rightArrow = document.querySelector('.arrow-right')
+
 let currentSliderImg = 1
 
 firstDot.style.backgroundColor = '#ffcd19'
 
-rightArrow.addEventListener('click', () => {
-  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 0, display: 'none'});
+const changeImageToNext = () => {
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1.5, opacity: 0, display: 'none'});
   dots[currentSliderImg-1].style.backgroundColor = 'white';
   if (currentSliderImg === 4){
     currentSliderImg = 1
   } else {
     currentSliderImg += 1
   }
-  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 1, display: 'block'});
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1.5, opacity: 1, display: 'block'});
   dots[currentSliderImg-1].style.backgroundColor = '#ffcd19'
-})
+}
 
-leftArrow.addEventListener('click', () => {
-  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 0, display: 'none'});
+const changeImageToPrevious = () => {
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1.5, opacity: 0, display: 'none'});
   dots[currentSliderImg-1].style.backgroundColor = 'white';
   if (currentSliderImg === 1){
     currentSliderImg = 4
   } else {
     currentSliderImg -= 1
   }
-  gsap.to(sliderImages[currentSliderImg-1], { duration: 1, opacity: 1, display: 'block'});
+  gsap.to(sliderImages[currentSliderImg-1], { duration: 1.5, opacity: 1, display: 'block'});
   dots[currentSliderImg-1].style.backgroundColor = '#ffcd19'
-})
+}
+
+rightArrow.addEventListener('click', changeImageToNext)
+leftArrow.addEventListener('click', changeImageToPrevious)
+
+//function that changes images automatically
+
+setInterval(() => {changeImageToNext()}, 5000);
 
 //function to change images easly when back-end is ready
 
@@ -74,3 +82,4 @@ mobileMenuIcon.addEventListener("click", () => {
     mobileMenuStatus = "closed"
   }
 });
+
