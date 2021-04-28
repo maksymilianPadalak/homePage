@@ -1,6 +1,8 @@
 .third-sector-wrapper{
   height: 100vh;
   width: 100%;
+  position: relative;
+  right: 500px;
 }
 
 .third-sector-text-wrapper{
@@ -19,19 +21,20 @@
   color: #494949;
   font-size: 13px;
   line-height: 20px;
+  text-align:center
 }
 
 .third-sector-image-and-youtube-wrapper{
-  height: 50vh;
   width: 100vw;
 }
 
 .third-sector-image-wrapper{
-  position: absolute;
-  z-index: -10;
+position: relative;
+z-index: -10;
 }
 
 .third-sector-image-wrapper img{
+  height: 400px;
   width: 100%;
   filter: brightness(30%);
   object-fit: cover;
