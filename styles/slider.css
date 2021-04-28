@@ -244,10 +244,8 @@ justify-content: space-between
   }
 
   .slider-buttons-wrapper{
-    position: absolute;
     flex-direction: row;
     align-items: center;
-    left: 10vw;
   }
 
   .slider-buttons-wrapper button{

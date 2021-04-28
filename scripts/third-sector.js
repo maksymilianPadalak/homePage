@@ -9,3 +9,21 @@ gsap.to(".third-sector-text-wrapper", {
   ease: "bounce.out",
   x: 1000,
 });
+
+const playButton = document.querySelector('.play-button')
+const closeYouTubeButton = document.querySelector(".close-youtube-button")
+const youtubeVideo = document.querySelector('iframe')
+
+playButton.addEventListener('click', () => {
+  gsap.to(".third-sector-youtube-wrapper", {display: "flex", duration: 1, opacity: 1})
+})
+
+closeYouTubeButton.addEventListener('click', () => {
+  console.log('witam')
+  gsap.to(".third-sector-youtube-wrapper", {display: "none", duration: 1, opacity: 0})
+  //video has to reset every time user closes modal
+  youtubeVideo.src = ''
+  youtubeVideo.src = "https://www.youtube.com/embed/tgbNymZ7vqY"
+})
+
+
