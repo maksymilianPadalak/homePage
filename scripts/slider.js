@@ -68,17 +68,22 @@ mobileMenuIcon.addEventListener("click", () => {
     gsap.to(".mobile-menu-wrapper", {
       duration: 1,
       opacity: 1,
-      x: 20,
       display: "flex",
+      y: 300
     });
+    gsap.to(".mobile-menu-icon-wrapper", {y: 120, delay: 0.44})
+    gsap.to("#only-closed", {opacity:0, duration: 1})
+
     mobileMenuStatus = "opened";
   } else {
     gsap.to(".mobile-menu-wrapper", {
       duration: 1,
       opacity: 0,
-      x: -20,
       display: "none",
+      y: -300
     });
+    gsap.to(".mobile-menu-icon-wrapper", {y: 0})
+    gsap.to("#only-closed", {opacity: 1})
     mobileMenuStatus = "closed"
   }
 });

@@ -1,3 +1,6 @@
 -change arrows font to change background photo
 - import font
 -napisz inaczej strzałki
+
+-dodaj scrollowanie palcem przy Sliderze
+-change mobile menu display to none when mobile menu is opened and size is wider than x px
