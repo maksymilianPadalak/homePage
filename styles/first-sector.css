@@ -55,16 +55,14 @@ ul {
 }
 
 @media only screen and (min-width: 1220px) {
-
   .first-sector-wrapper {
     justify-content: flex-start;
-    max-width: 100vw;
   }
 
   .first-sector-image-wrapper {
     height: 400px;
     width: 400px;
-    display: block;
+    display: table;
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.05);
   }
 
@@ -74,12 +72,12 @@ ul {
     object-fit: cover;
     filter: brightness(80%);
   }
-
+  
   .first-sector-text-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 60vw;
+    max-width: 40vw;
   }
 
   .first-sector-wrapper h1 {

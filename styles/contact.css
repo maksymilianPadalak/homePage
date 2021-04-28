@@ -20,19 +20,25 @@ align-items: center;
   border: none;
 }
 
+.contact-wrapper input:hover{
+  cursor: pointer;
+}
+
 .contact-wrapper textarea{
   border: none;
   font-family: "Muli";
 }
 
-.contact-input-wrapper:hover{
-  box-shadow: 5px 5px 5px rgb(211, 211, 211);
+.contact-wrapper textarea:hover{
   cursor: pointer;
 }
 
 .contact-input-wrapper:hover{
   box-shadow: 5px 5px 5px rgb(211, 211, 211);
-  cursor: pointer;
+}
+
+.contact-textarea-wrapper:hover{
+  box-shadow: 5px 5px 5px rgb(211, 211, 211);
 }
 
 .contact-input-wrapper{

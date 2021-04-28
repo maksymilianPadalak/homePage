@@ -124,14 +124,14 @@ justify-content: space-between
 
 .first-slider-texts p:first-child{
   color: white;
-  font-weight: lighter;
+  font-weight: 60;
   margin-block-start: 0;
 }
 
 .first-slider-texts p:nth-child(2){
   margin: none;
   color: rgb(49, 154, 240);
-  font-weight: lighter;
+  font-weight: 60;
   margin-top: 5px;
 }
 
@@ -243,14 +243,29 @@ justify-content: space-between
     color: grey;
   }
 
+  .slider-buttons-wrapper{
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    left: 10vw;
+  }
+
   .slider-buttons-wrapper button{
     border: 2px solid white;
-    border-radius:2em;
+    border-radius:3em;
     color: white;
     background-color: transparent;
     height: 50px;
-    width: 200px;
-    margin-right: 10px;
+    width: 250px;
+    margin-right: 15px;
   }
   
+  .first-slider-texts p:first-child{
+    font-size: 50px;
+  }
+  
+  .first-slider-texts p:nth-child(2){
+    font-size: 50px;
+  }
+
 }
