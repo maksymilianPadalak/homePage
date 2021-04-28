@@ -26,6 +26,10 @@
 
 .third-sector-image-and-youtube-wrapper{
   width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .third-sector-image-wrapper{
@@ -39,3 +43,44 @@ z-index: -10;
   filter: brightness(30%);
   object-fit: cover;
 }
+
+.third-sector-youtube-wrapper{
+  position: absolute;
+  z-index: 20;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 250px;
+}
+
+.third-sector-youtube-wrapper iframe{
+  height: 200px;
+}
+
+.play-button-wrapper{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background-color: rgba(0, 183, 220, 0.275);
+}
+
+
+.play-button-wrapper button{
+  position: absolute;
+  z-index: 10;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background-color: rgba(0, 183, 220, 0.775);
+  border: none;
+  font-size: 80px;
+  color: white;
+}
+

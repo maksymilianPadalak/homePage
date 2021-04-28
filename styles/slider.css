@@ -182,11 +182,17 @@ justify-content: space-between
   font-size: 60px;
   color: white;
   margin: 0;
+  margin-right: 10px;
+  margin-left: 10 px;
 }
 
 .arrows-wrapper p:hover{
   cursor: pointer;
   color: #ffcd19;
+}
+
+.arrow-left{
+  transform: scaleX(-1);
 }
 
 @media only screen and (min-width: 1220px){

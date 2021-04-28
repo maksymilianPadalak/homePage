@@ -1,6 +1,7 @@
 .final-sector-wrapper{
   height: 50vh;
   background-color: #001927;
+  position: relative;
 }
 
 .map-wrapper{
