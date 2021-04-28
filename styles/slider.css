@@ -98,7 +98,7 @@ justify-content: space-between
   height: 250px;
   width: 100%;
   top: -300px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 182, 220, 0.8);
   display: none;
   /* change to flex when visible */
   flex-direction: column;
