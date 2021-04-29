@@ -82,11 +82,16 @@ ul {
 /* style for desktop */
 
 @media only screen and (min-width: 1220px) {
+  .first-sector-wrapper {
+    justify-content: space-between;
+  }
+
   .first-sector-image-wrapper {
-    height: 400px;
-    width: 400px;
-    display: table;
+    height: 500px;
+    width: 500px;
+    display: block;
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.05);
+    margin-right: 10vw;
   }
 
   .first-sector-image-wrapper img {
@@ -101,18 +106,19 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     max-width: 40vw;
+    margin-left: 80px;
   }
 
   .first-sector-wrapper h1 {
     color: #002841;
     position: relative;
-    right: 10a00px;
+    right: 1000px;
   }
 
   .first-sector-wrapper p {
     margin: 0px;
     color: #494949;
-    font-size: 20px;
+    font-size: 15.5px;
     line-height: 30px;
     text-align: left;
   }
