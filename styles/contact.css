@@ -183,4 +183,10 @@ margin-top: 20px;
     margin-top: 20px;
   }
 
+  .map-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
+
