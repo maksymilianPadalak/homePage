@@ -23,7 +23,6 @@ a{
   text-decoration: none;
 }
 
-
 input:focus{
   outline: none;
 }
@@ -38,4 +37,13 @@ button:focus{
 
 button:hover{
   cursor: pointer;
+}
+
+
+a:hover{
+  color: grey;
+}
+
+textarea{
+  resize:none;
 }

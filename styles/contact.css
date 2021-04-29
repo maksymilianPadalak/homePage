@@ -48,6 +48,8 @@ margin-top: 20px;
 .contact-wrapper textarea{
   border: none;
   font-family: "Muli";
+  height: 180px;
+  margin-left: 10px;
 }
 
 .contact-wrapper textarea:hover{
@@ -100,6 +102,12 @@ margin-top: 20px;
   width: 150px;
   margin-right: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.send-button:hover{
+  background-color: rgb(6, 209, 255);
+  transform: translateY(-2px);
 }
 
 .name-while-input{
@@ -143,15 +151,15 @@ margin-top: 20px;
   }
 
   #name-input-wrapper{
-    width: 20vw;
     margin-left: 1vw;
     margin-right: 1vw;
+    width: 20vw;
   }
 
   #suurname-input-wrapper{
-    width: 20vw;
     margin-right: 1vw;
     margin-left: 1vw;
+    width: 20vw;
   }
 
 /* width of both name and surname input + margins is equal to 42vw */
