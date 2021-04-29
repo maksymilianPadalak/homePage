@@ -1,5 +1,3 @@
-import {sendHttpRequest} from './http-Requestscripts/'
-
 gsap.registerPlugin(ScrollTrigger)
 
 gsap.to('.second-sector-text-wrapper h1', {
