@@ -3,6 +3,11 @@
   src: url("/fonts/Muli/Muli-Regular.ttf") format(ttf),
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body{
 margin-top: 0;
 margin-left: 0;
@@ -31,3 +36,6 @@ button:focus{
   outline: none;
 }
 
+button:hover{
+  cursor: pointer;
+}

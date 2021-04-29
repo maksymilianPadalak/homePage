@@ -1,12 +1,11 @@
 .second-sector-wrapper{
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
  
 }
-
 
 .second-sector-text-wrapper{
   display: flex;
@@ -27,4 +26,20 @@
   line-height: 20px;
   opacity: 0;
   text-align:center
+}
+
+/* styling for tablet */
+
+@media only screen and (min-width: 700px) {
+  .second-sector-wrapper h1 {
+    font-size: 40px;
+  }
+  
+  .second-sector-wrapper p {
+    margin: 15px;
+    color: #494949;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+  }
 }

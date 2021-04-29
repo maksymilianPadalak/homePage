@@ -16,7 +16,7 @@
 .first-sector-wrapper h1 {
   color: #002841;
   position: relative;
-  right: 300px;
+  right: 1000px;
 }
 
 .first-sector-wrapper p {
@@ -54,11 +54,34 @@ ul {
   align-items: center;
 }
 
-@media only screen and (min-width: 1220px) {
-  .first-sector-wrapper {
-    justify-content: flex-start;
+/* style for tablet */
+
+@media only screen and (min-width: 700px) {
+  .first-sector-text-wrapper {
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
+  .first-sector-wrapper h1 {
+    font-size: 40px;
+  }
+  
+  .first-sector-wrapper p {
+    margin: 15px;
+    color: #494949;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .first-sector-requirements-wrapper li{
+    font-size: 20px;
+  }
+}
+
+/* style for desktop */
+
+@media only screen and (min-width: 1220px) {
   .first-sector-image-wrapper {
     height: 400px;
     width: 400px;
@@ -83,7 +106,7 @@ ul {
   .first-sector-wrapper h1 {
     color: #002841;
     position: relative;
-    right: 300px;
+    right: 10a00px;
   }
 
   .first-sector-wrapper p {

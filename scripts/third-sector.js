@@ -19,7 +19,6 @@ playButton.addEventListener('click', () => {
 })
 
 closeYouTubeButton.addEventListener('click', () => {
-  console.log('witam')
   gsap.to(".third-sector-youtube-wrapper", {display: "none", duration: 1, opacity: 0})
   //video has to reset every time user closes modal
   youtubeVideo.src = ''
