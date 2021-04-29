@@ -206,25 +206,30 @@
         <p>Skorzystaj z formularza</p>
 
         <form class="form-wrapper">
-        <div class="name-surname-wrapper">
-          <div class="contact-input-wrapper name">
-<!-- 
-            It will appear when user will type something -->
-              
-            <div class="name-while-input">Name</div> 
 
-            <input type="text" name="firstname" placeholder="Name">
+        <div class="name-surname-wrapper">
+
+          <div class="contact-input-wrapper" id="name-input-wrapper">
+            <div class="name-while-input">Imię</div> 
+            <input type="text" name="firstname" placeholder="Imię" id="name-input">
           </div>
-          <div class="contact-input-wrapper">
-            <input type="text" name="surname" placeholder="Surname">
+
+          <div class="contact-input-wrapper" id="name-input-wrapper">
+            <div class="surname-while-input">Nazwisko</div> 
+            <input type="text" name="Nazwisko" placeholder="Surname" id="surname-input">
           </div>
-          <div class="contact-input-wrapper">
-            <input type="email" name="email" placeholder="Email">
-          </div>
-          <div class="contact-textarea-wrapper">
-            <textarea type="text" name="surname" placeholder="Treść wiadomości"></textarea>
-          </div>
+
         </div>
+
+          <div class="contact-input-wrapper" id="email-input-wrapper">
+            <div class="email-while-input">Email</div> 
+            <input type="email" name="email" placeholder="Email" id="email-input">
+          </div>
+
+          <div class="contact-textarea-wrapper" id="message-input-wrapper">
+            <div class="message-while-input">Treść wiadomości</div> 
+            <textarea type="text" name="message" placeholder="Treść wiadomości" id="message-input"></textarea>
+          </div>
 
         <div class="agreement">
           <input type="checkbox" class="checkbox">
