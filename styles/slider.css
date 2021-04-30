@@ -131,6 +131,7 @@
 
 .first-slider-texts p {
   margin-block-end: 0;
+  font-size: 20px;
 }
 
 .first-slider-texts p:first-child {
@@ -155,8 +156,8 @@
 }
 
 .dot {
-  height: 1.5vh;
-  width: 1.5vh;
+  height: 15px;
+  width: 15px;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
@@ -178,9 +179,8 @@
   border-radius: 2em;
   color: white;
   background-color: transparent;
-  height: 5vh;
-  width: 18vh;
-  font-size: 1.2vh;
+  height: 50px;
+  width: 180px;
 }
 
 .slider-buttons-wrapper button:hover {
@@ -194,15 +194,15 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  top: 80vh
+  top: 85vh;
 }
 
 .arrows-wrapper p {
-  font-size: 6vh;
+  font-size: 60px;
   color: white;
   margin: 0;
-  margin-right: 0.8vh;
-  margin-left: 0.8vh;
+  margin-right: 10px;
+  margin-left: 10 px;
 }
 
 .arrows-wrapper p:hover {
@@ -273,9 +273,6 @@
     font-size: 50px;
   }
 
-  .first-slider-texts p:nth-child(2) {
-    font-size: 50px;
-  }
 
   .arrows-wrapper {
     margin-left: 10vw;
