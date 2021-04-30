@@ -179,8 +179,8 @@
   border-radius: 2em;
   color: white;
   background-color: transparent;
-  height: 50px;
-  width: 180px;
+  height: 40px;
+  width: 120px;
 }
 
 .slider-buttons-wrapper button:hover {
@@ -198,7 +198,7 @@
 }
 
 .arrows-wrapper p {
-  font-size: 60px;
+  font-size: 30px;
   color: white;
   margin: 0;
   margin-right: 10px;
@@ -212,6 +212,25 @@
 
 .arrow-left {
   transform: scaleX(-1);
+}
+
+/* Buttons and arrows in slider sector were to big for older phones like iPhone 5, so i created a smaller version for them */
+
+@media only screen and (min-width: 330px) {
+  .arrows-wrapper p {
+    font-size: 50px;
+  }
+
+  .slider-buttons-wrapper button {
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 2em;
+    color: white;
+    background-color: transparent;
+    height: 50px;
+    width: 180px;
+  }
+  
 }
 
 /* Tablet styling */
