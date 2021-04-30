@@ -2,7 +2,7 @@
   background-color: #001927;
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 .map-wrapper{
@@ -69,11 +69,7 @@
 @media only screen and (min-width: 1220px){
 
   .final-sector-wrapper{
-    background-color: #001927;
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-    width: 100vw;
+    max-height: 80vh;
   }
 
   .final-sector-wrapper{
