@@ -182,15 +182,14 @@
           </div>
   
           <div class="play-button-wrapper">
-            <button class="play-button">&#9651;</button>
-            
+
+            <div class="play-button-wrapper-top"></div>
+            <img src="/images/play-button.png"/>
           </div>
   
           <div class="third-sector-youtube-wrapper">
   
-            <p class="close-youtube-button">
-              &#x2715;
-            </p>
+            <button class="close-youtube-button">&#x2715</button>
   
             <iframe
               src="https://www.youtube.com/embed/tgbNymZ7vqY">
@@ -224,7 +223,10 @@
 
           <div class="contact-input-wrapper" id="email-input-wrapper">
             <div class="email-while-input">Email</div> 
-            <input type="email" name="email" placeholder="Email" id="email-input">
+<!-- 
+            some browsers have their own email validation which is different from what I want, so don't set email input type to "email"-->
+
+            <input type="text" name="email" placeholder="Email" id="email-input">
           </div>
 
           <div class="contact-textarea-wrapper" id="message-input-wrapper">
@@ -324,10 +326,12 @@
   </div>
 
 
+
+<!-- Third sector script has to bo loaded first because it contains google maps script -->
+<script src="scripts/third-sector.js" defer></script>
 <script src="scripts/slider.js" defer></script>
 <script src="scripts/first-sector.js" defer></script>
 <script src="scripts/second-sector.js" defer></script>
-<script src="scripts/third-sector.js" defer></script>
 <script src="scripts/final-sector.js" defer></script>
 <script src="scripts/contact.js" defer></script>
 <script src="scripts/http-Request.js" defer></script>
