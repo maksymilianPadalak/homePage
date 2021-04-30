@@ -94,7 +94,7 @@
   position: absolute;
   top: 30px;
   right: 10vw;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .mobile-menu-icon-element {
