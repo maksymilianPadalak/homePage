@@ -273,6 +273,9 @@
     font-size: 50px;
   }
 
+  .first-slider-texts p:nth-child(2) {
+    font-size: 50px;
+  }
 
   .arrows-wrapper {
     margin-left: 10vw;
