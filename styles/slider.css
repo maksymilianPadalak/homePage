@@ -155,8 +155,8 @@
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 1.5vh;
+  width: 1.5vh;
   background-color: white;
   border-radius: 50%;
   display: inline-block;
@@ -178,8 +178,9 @@
   border-radius: 2em;
   color: white;
   background-color: transparent;
-  height: 50px;
-  width: 180px;
+  height: 5vh;
+  width: 18vh;
+  font-size: 1.2vh;
 }
 
 .slider-buttons-wrapper button:hover {
@@ -193,15 +194,15 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  top: 85vh;
+  top: 80vh
 }
 
 .arrows-wrapper p {
-  font-size: 60px;
+  font-size: 6vh;
   color: white;
   margin: 0;
-  margin-right: 10px;
-  margin-left: 10 px;
+  margin-right: 0.8vh;
+  margin-left: 0.8vh;
 }
 
 .arrows-wrapper p:hover {
