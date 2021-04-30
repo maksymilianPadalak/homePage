@@ -1,5 +1,5 @@
 .second-sector-wrapper {
-  height: 700px;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
