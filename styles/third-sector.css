@@ -5,11 +5,12 @@
   justify-content: center;
   min-height: 100vh;
   width: 100%;
-  right: 1000px;
 }
 
 .third-sector-wrapper h1 {
   color: #002841;
+  position: static;
+  transform: translate(-2000px);
 }
 
 .third-sector-wrapper p {
@@ -18,6 +19,8 @@
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+  position: static;
+  transform: translate(-2000px);
 }
 
 .third-sector-image-and-youtube-wrapper {

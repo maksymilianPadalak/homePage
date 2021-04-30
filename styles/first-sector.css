@@ -16,6 +16,8 @@
 
 .first-sector-wrapper h1 {
   color: #002841;
+  position: static;
+  transform: translate(2000px);
 }
 
 .first-sector-wrapper p {
@@ -27,7 +29,7 @@
 }
 
 .first-sector-description-wrapper {
-  opacity: 1;
+  opacity: 0;
 }
 
 .first-sector-requirements-wrapper {
@@ -36,6 +38,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: static;
+  transform: translate(2000px);
 }
 
 .first-sector-image-wrapper {
