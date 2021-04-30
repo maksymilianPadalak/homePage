@@ -19,6 +19,6 @@ async function sendHttpRequest(method, url, headers, data) {
   }
 }
 
-export {sendHttpRequest}
+export default {sendHttpRequest}
 
 //in order to use this function in other scripts change script type to type="module" 

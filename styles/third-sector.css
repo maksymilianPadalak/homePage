@@ -2,7 +2,6 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  right: 1000px;
 }
 
 .third-sector-text-wrapper {
@@ -14,14 +13,17 @@
 .third-sector-wrapper h1 {
   color: #002841;
   position: relative;
+  right: 1000px;
 }
 
 .third-sector-wrapper p {
+  position: relative;
   margin: 15px;
   color: #494949;
   font-size: 13px;
   line-height: 20px;
   text-align: center;
+  right: 1000px;
 }
 
 .third-sector-image-and-youtube-wrapper {
@@ -98,6 +100,7 @@
   border: none;
   font-size: 80px;
   color: white;
+  transform: rotate(90deg);
 }
 
 .play-button-wrapper button:hover {
@@ -131,10 +134,16 @@
 }
 
 @media only screen and (min-width: 1220px) {
+
   .third-sector-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 700px;
+  }
+
+  .third-sector-wrapper-mobile {
+   height: 100%;
   }
 
   .third-sector-text-wrapper {
@@ -142,7 +151,7 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 40vw;
-    margin-left: 80px;
+    margin-left: 10vw;
   }
 
   .third-sector-text-wrapper h1{
@@ -163,7 +172,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-right: 80px;
+    margin-right: 10vw;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.05);
   }
   
   .third-sector-image-wrapper img {

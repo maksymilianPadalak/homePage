@@ -60,21 +60,22 @@
     width: 500px;
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.05);
     margin-left: 10vw;
+    overflow: hidden;
   }
 
   .second-sector-image-wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    filter: brightness(80%);
+    filter: brightness(90%);
   }
 
   .second-sector-text-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 40vw;
-    margin-right: 80px;
+    width: 40vw;
+    margin-right: 10vw;
   }
 
   .second-sector-text-wrapper h1{

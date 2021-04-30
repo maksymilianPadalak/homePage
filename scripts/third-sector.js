@@ -1,13 +1,17 @@
-gsap.to(".third-sector-text-wrapper", {
+gsap.to(".third-sector-text-wrapper h1", {
   scrollTrigger: {
     trigger: ".third-sector-text-wrapper",
-    start: "90% 90%",
     toggleActions: "play none none none",
   },
-  opacity: 1,
-  duration: 2.5,
-  ease: "bounce.out",
-  x: 1000,
+  x: 1000
+});
+
+gsap.to(".third-sector-text-wrapper p", {
+  scrollTrigger: {
+    trigger: ".third-sector-text-wrapper",
+    toggleActions: "play none none none",
+  },
+  x: 1000
 });
 
 const playButton = document.querySelector('.play-button')

@@ -77,7 +77,7 @@ const validateForm = () => {
 
   if (emailInput.value === "" || !validateEmail(emailInput.value )) {
     emailInputWrapper.style.border = "2px solid red";
-    contactValidationText.textContent = "Wprowadź mail poprawnie!.";
+    contactValidationText.textContent = "Wprowadź mail poprawnie!";
     contactValidationText.style.color = "red";
     return false;
   }
