@@ -73,7 +73,7 @@ setInterval(() => {
   changeImageToNext();
 }, 5000);
 
-//function to change images easly when back-end is ready
+//function to change slider images easly when back-end is ready
 
 const changeSliderImg = (imgNumber, imgSrc) => {
   sliderImages[imgNumber - 1].firstElementChild.src = imgSrc;
@@ -82,29 +82,24 @@ const changeSliderImg = (imgNumber, imgSrc) => {
 //mobile menu handler
 
 const mobileMenuIcon = document.querySelector(".mobile-menu-icon-wrapper");
-let mobileMenuStatus = "closed";
+const closeMobileMenuButton = document.querySelector(
+  ".close-mobile-menu-wrapper"
+);
 
 mobileMenuIcon.addEventListener("click", () => {
-  if (mobileMenuStatus === "closed") {
-    gsap.to(".mobile-menu-wrapper", {
-      duration: 1,
-      display: "flex",
-      y: 300,
-    });
-    gsap.to(".mobile-menu-icon-wrapper", { y: 170, delay: 0.41});
-    gsap.to("#only-closed", { opacity: 0, duration: 1 });
+  gsap.to(".mobile-menu-wrapper", {
+    duration: 1,
+    display: "flex",
+    y: 300,
+  });
+});
 
-    mobileMenuStatus = "opened";
-  } else {
-    gsap.to(".mobile-menu-wrapper", {
-      duration: 1,
-      display: "none",
-      y: -300,
-    });
-    gsap.to(".mobile-menu-icon-wrapper", { y: 0 });
-    gsap.to("#only-closed", { opacity: 1 });
-    mobileMenuStatus = "closed";
-  }
+closeMobileMenuButton.addEventListener("click", () => {
+  gsap.to(".mobile-menu-wrapper", {
+    duration: 1,
+    display: "none",
+    y: -300,
+  });
 });
 
 // When the user scrolls the page, execute myFunction

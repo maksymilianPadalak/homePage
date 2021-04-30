@@ -69,6 +69,7 @@
   top: 0;
   width: 100vw;
   z-index: 1000;
+  height: 85px;
   background-color: rgba(0, 182, 220, 1);
   transition: 2s;
 }
@@ -115,10 +116,20 @@
   justify-content: center;
   align-items: center;
   font-size: 23px;
+  z-index: 1000;
 }
 
 .mobile-menu-wrapper a {
   margin-top: 10px;
+}
+
+.close-mobile-menu-wrapper{
+  color: white;
+  font-size: 30px;
+  margin-right: 3vw;
+  background: transparent;
+  border: none;
+  align-self: flex-end;
 }
 
 .first-slider-texts p {
@@ -256,8 +267,8 @@
     height: 130px;
   }
 
-  .top-bar-wrapper {
-    height: 200px;
+  .sticky{
+    height: 160px;
   }
 
   .desktop-menu-wrapper {
@@ -270,7 +281,12 @@
   .desktop-menu-wrapper a {
     font-size: 17.5px;
     margin-right: 90px;
+    position: static;
+    transform: scale(1.5);
   }
+
+
+
 
   .slider-buttons-wrapper {
     flex-direction: row;

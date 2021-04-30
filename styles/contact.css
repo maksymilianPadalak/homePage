@@ -95,7 +95,7 @@ width: 100vw;
 }
 
 .send-button{
-  border: 2px solid white;
+  border: 0px solid white;
   border-radius:2em;
   color: white;
   background-color: rgba(0, 182, 222);
@@ -143,6 +143,11 @@ width: 100vw;
   font-size: 10px;
   color: #7b94a5;
   display: none;
+}
+
+.checkbox:checked{
+  filter: invert(100%) hue-rotate(210deg) brightness(2);
+  outline: none;
 }
 
 @media only screen and (min-width: 1220px){
