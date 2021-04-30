@@ -16,8 +16,6 @@
 
 .first-sector-wrapper h1 {
   color: #002841;
-  position: relative;
-  right: 1000px;
 }
 
 .first-sector-wrapper p {
@@ -26,17 +24,14 @@
   font-size: 13px;
   line-height: 20px;
   text-align: center;
-  right: 1000px;
 }
 
 .first-sector-description-wrapper {
-  opacity: 0;
+  opacity: 1;
 }
 
 .first-sector-requirements-wrapper {
-  position: relative;
   width: 100vw;
-  left: -1000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,8 +108,6 @@ ul {
 
   .first-sector-wrapper h1 {
     color: #002841;
-    position: relative;
-    right: 1000px;
   }
 
   .first-sector-wrapper p {
@@ -132,9 +125,7 @@ ul {
 
   .first-sector-requirements-wrapper {
     margin-top: 30px;
-    position: relative;
     width: 100vw;
-    left: -1000px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

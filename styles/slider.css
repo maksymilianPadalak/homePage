@@ -162,14 +162,14 @@
   margin-top: 30px;
 }
 
-.slider-buttons-wrapper {
+/* .slider-buttons-wrapper {
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   top: 60vh;
-}
+} */
 
 .slider-buttons-wrapper button {
   margin-top: 20px;
