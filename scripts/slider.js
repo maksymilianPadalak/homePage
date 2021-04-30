@@ -69,9 +69,9 @@ leftArrow.addEventListener("click", changeImageToPrevious);
 
 //function that changes images automatically
 
-setInterval(() => {
-  changeImageToNext();
-}, 5000);
+// setInterval(() => {
+//   changeImageToNext();
+// }, 5000);
 
 //function to change images easly when back-end is ready
 
