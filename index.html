@@ -263,7 +263,7 @@
         <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
         <script
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVWF-QV6CIQYaFMGe7wGCeFk_PBxCFr40&callback=initMap&libraries=&v=weekly"
-          async
+          defer
         ></script>
         </div>
 
@@ -327,13 +327,12 @@
 
 
 <!-- Third sector script has to bo loaded first because it contains google maps script -->
-<script src="scripts/third-sector.js" defer></script>
 <script src="scripts/slider.js" defer></script>
 <script src="scripts/first-sector.js" defer></script>
 <script src="scripts/second-sector.js" defer></script>
-<script src="scripts/final-sector.js" defer></script>
+<script src="scripts/third-sector.js" defer></script>
 <script src="scripts/contact.js" defer></script>
-<script src="scripts/http-Request.js" defer></script>
+<script src="scripts/final-sector.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
