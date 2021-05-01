@@ -93,8 +93,8 @@
   }
   
   #map{
-    height: 20vh;
-    width: 20vh;
+    height: 200px;
+    width: 200px;
     top: 20px;
     left: 5vw;
   }
