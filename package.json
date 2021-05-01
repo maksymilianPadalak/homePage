@@ -1,0 +1,26 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "This is recruitment task for a job I really want to land",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maksymilianPadalak/craftonRecruitmentTask.git"
+  },
+  "author": "Maksymilian Padalak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maksymilianPadalak/craftonRecruitmentTask/issues"
+  },
+  "homepage": "https://github.com/maksymilianPadalak/craftonRecruitmentTask#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  }
+}
