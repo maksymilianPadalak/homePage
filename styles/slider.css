@@ -61,14 +61,14 @@
 .first-slider-texts p:first-child {
   color: white;
   font-weight: 60;
-  margin-block-start: 0;
+  margin: 0;
 }
 
 .first-slider-texts p:nth-child(2) {
   margin: none;
   color: rgb(49, 154, 240);
   font-weight: 60;
-  margin-top: 5px;
+  margin: 0;
 }
 
 .dots {
@@ -179,8 +179,6 @@
     flex-direction: row;
 
   }
-
-
   .first-slider-texts p {
     margin-block-end: 0;
     margin-left: 0;

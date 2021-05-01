@@ -19,7 +19,7 @@ const closeYouTubeButton = document.querySelector(".close-youtube-button")
 const youtubeVideo = document.querySelector('iframe')
 
 playButton.addEventListener('click', () => {
-  gsap.to(".third-sector-youtube-wrapper", {display: "flex", duration: 1, opacity: 1})
+  gsap.to(".third-sector-youtube-wrapper", {display: "grid", duration: 1, opacity: 1})
 })
 
 closeYouTubeButton.addEventListener('click', () => {
