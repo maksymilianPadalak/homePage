@@ -33,15 +33,29 @@
   display: none;
   opacity: 0;
 }
+
 .fourth-slider-image {
   position: absolute;
   display: none;
   opacity: 0;
 }
 
-.first-slider-texts p {
-  margin-block-end: 0;
-  margin-left: 10vw;
+.slider-navigation-wrapper{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 40% 20% 20%;
+  grid-template-columns: 10% 80% 10%;
+
+}
+
+.first-slider-texts {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .first-slider-texts p:first-child {
@@ -57,22 +71,15 @@
   margin-top: 5px;
 }
 
-.slider-navigation-wrapper{
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 80% 20%;
-}
-
 .dots {
-  grid-row-start: 1;
-  grid-row-end: 1;
-  width: 100vw;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: 15%;
-  transform: translateX(-5vw);
+  align-items: center;
 }
 
 .dot {
@@ -84,12 +91,13 @@
 }
 
 .arrows-wrapper {
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
   margin-bottom: 10vh;
 }
 
@@ -110,21 +118,15 @@
   transform: scaleX(-1);
 }
 
-.first-slider-texts-and-buttons {
-  position: absolute;
-  top: 45vh;
-  font-size: 2vh;
-  width: 100vw;
-  
-}
-
 
 .slider-buttons-wrapper {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .slider-buttons-wrapper button {
@@ -178,10 +180,6 @@
 
   }
 
-  .first-slider-texts-and-buttons {
-    margin-left: 10vw;
-    width: 100%;
-  }
 
   .first-slider-texts p {
     margin-block-end: 0;
@@ -207,7 +205,6 @@
   }
 
   .arrows-wrapper {
-    margin-left: 10vw;
     justify-content: flex-start;
   }
 
