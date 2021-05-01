@@ -1,0 +1,62 @@
+@font-face{
+  font-family: "Muli";
+  src: url("/fonts/Muli/Muli-Regular.ttf") format(ttf),
+}
+
+@keyframes pulse {
+  0% { transform: scale(1)}
+  50% { transform: scale(1.15)}
+  100% { transform: scale(1)}
+}
+
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body{
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+margin-bottom: 0;
+font-family: "Muli", sans-serif;
+}
+
+/* Remove decoraction and purple color from every hyperlink */
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+textarea:focus{
+  outline: none;
+}
+
+map:focus{
+  outline: none;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+
+a:hover{ 
+  color: grey;
+}
+
+
+textarea{
+  resize:none;
+}

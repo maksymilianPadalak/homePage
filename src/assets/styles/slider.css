@@ -1,0 +1,212 @@
+.slider-wrapper {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.slider-images-wrapper{
+  position: absolute;
+  z-index: -1;
+}
+
+.slider-images-wrapper img{
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(30%);
+  object-fit: cover;
+}
+
+.first-slider-image {
+  position: absolute;
+  display: block;
+  opacity: 1;
+}
+
+.second-slider-image {
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+.third-slider-image {
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+.fourth-slider-image {
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+.slider-navigation-wrapper{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 20% 40% 20% 20%;
+  grid-template-columns: 10% 80% 10%;
+
+}
+
+.first-slider-texts {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.first-slider-texts p:first-child {
+  color: white;
+  font-weight: 60;
+  margin: 0;
+}
+
+.first-slider-texts p:nth-child(2) {
+  margin: none;
+  color: rgb(49, 154, 240);
+  font-weight: 60;
+  margin: 0;
+}
+
+.dots {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.arrows-wrapper {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.arrows-wrapper p {
+  font-size: 30px;
+  color: white;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.arrows-wrapper p:hover {
+  cursor: pointer;
+  color: #ffcd19;
+}
+
+.arrow-left {
+  transform: scaleX(-1);
+}
+
+
+.slider-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.slider-buttons-wrapper button {
+  margin-top: 20px;
+  border: 2px solid white;
+  border-radius: 2em;
+  color: white;
+  background-color: transparent;
+  height: 40px;
+  width: 120px;
+}
+
+.slider-buttons-wrapper button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+/* Buttons and arrows in slider sector were to big for older phones like iPhone 5, so i created a smaller version for them */
+
+@media only screen and (min-width: 330px) {
+  .arrows-wrapper p {
+    font-size: 50px;
+  }
+
+  .slider-buttons-wrapper button {
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 2em;
+    color: white;
+    background-color: transparent;
+    height: 50px;
+    width: 180px;
+  }
+  
+}
+
+/* Tablet styling */
+
+@media only screen and (min-width: 700px) {
+  .first-slider-texts p {
+    font-size: 30px;
+  }
+}
+
+/*Desktop styling*/
+
+@media only screen and (min-width: 1220px) {
+  .slider-buttons-wrapper {
+    flex-direction: row;
+
+  }
+  .first-slider-texts p {
+    margin-block-end: 0;
+    margin-left: 0;
+  }
+  
+  .slider-buttons-wrapper button {
+    border: 2px solid white;
+    border-radius: 3em;
+    color: white;
+    background-color: transparent;
+    height: 50px;
+    width: 250px;
+    margin-right: 15px;
+  }
+
+  .first-slider-texts p:first-child {
+    font-size: 50px;
+  }
+
+  .first-slider-texts p:nth-child(2) {
+    font-size: 50px;
+  }
+
+  .arrows-wrapper {
+    justify-content: flex-start;
+  }
+
+  .arrows-wrapper p {
+    margin-right: 10px;
+  }
+}
