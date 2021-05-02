@@ -86,18 +86,41 @@
 
 .first-slider-texts{
   visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 2s, transform 2s ease-in-out;
+  -moz-transition: opacity 2s, transform 2s ease-in-out;
+  -o-transition: opacity 2s, transform 2s ease-in-out;
+  transition: opacity 2s, transform 2s ease-in-out;
 }
 
 .second-slider-texts{
   visibility: hidden;
+  opacity: 0;
+  transform: translate(-5%, 0);
+  -webkit-transition: opacity 2s, transform 2s ease-in-out;
+  -moz-transition: opacity 2s, transform 2s ease-in-out;
+  -o-transition: opacity 2s, transform 2s ease-in-out;
+  transition: opacity 2s, transform 2s ease-in-out;
 }
 
 .third-slider-texts{
   visibility: hidden;
+  opacity: 0;
+  transform: translate(-5%, 0);
+  -webkit-transition: opacity 2s, transform 2s ease-in-out;
+  -moz-transition: opacity 2s, transform 2s ease-in-out;
+  -o-transition: opacity 2s, transform 2s ease-in-out;
+  transition: opacity 2s, transform 2s ease-in-out;
 }
 
 .fourth-slider-texts{
   visibility: hidden;
+  opacity: 0;
+  transform: translate(-5%, 0);
+  -webkit-transition: opacity 2s, transform 2s ease-in-out;
+  -moz-transition: opacity 2s, transform 2s ease-in-out;
+  -o-transition: opacity 2s, transform 2s ease-in-out;
+  transition: opacity 2s, transform 2s ease-in-out;
 }
 
 
@@ -148,7 +171,7 @@
   transform: scaleX(-1);
 }
 
-.slider-buttons-wrapper {
+#slider-buttons-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,7 +181,7 @@
   grid-column-end: 3;
 }
 
-.slider-buttons-wrapper button {
+#slider-buttons-wrapper button {
   margin-top: 20px;
   border: 2px solid white;
   border-radius: 2em;
@@ -168,11 +191,46 @@
   width: 120px;
 }
 
-.slider-buttons-wrapper button:hover {
+#slider-buttons-wrapper button:hover {
   background-color: white;
   color: black;
 }
 
+.first-slider-buttons{
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.second-slider-buttons{
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.third-slider-buttons{
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.fourth-slider-buttons{
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
 /* Buttons and arrows in slider sector were to big for older phones like iPhone 5, so i created a smaller version for them */
 
 @media only screen and (min-width: 330px) {
@@ -180,7 +238,7 @@
     font-size: 50px;
   }
 
-  .slider-buttons-wrapper button {
+  #slider-buttons-wrapper button {
     margin-top: 20px;
     border: 2px solid white;
     border-radius: 2em;
@@ -198,11 +256,11 @@
     font-size: 30px;
   }
 
-  .slider-buttons-wrapper {
+  #slider-buttons-wrapper {
     flex-direction: row;
   }
 
-  .slider-buttons-wrapper button {
+  #slider-buttons-wrapper button {
     margin-right: 15px;
   }
 }
@@ -225,6 +283,12 @@
 
   #slider-texts p:nth-child(2) {
     font-size: 50px;
+  }
+
+  #slider-buttons-wrapper button {
+    width: 240px;
+    height: 60px;
+    border-radius: 2.3em;
   }
 
   .arrows-wrapper {
