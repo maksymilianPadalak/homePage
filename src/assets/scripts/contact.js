@@ -10,27 +10,33 @@ const surnameInputWrapper = document.getElementById("surname-input-wrapper");
 const emailInputWrapper = document.getElementById("email-input-wrapper");
 const messageInputWrapper = document.getElementById("message-input-wrapper");
 
+const smallTextWhileNameInput = document.querySelector(".name-while-input");
+const smallTextWhileSurnameInput = document.querySelector(
+  ".surname-while-input"
+);
+const smallTextWhileEmailInput = document.querySelector(".email-while-input");
+
 nameInput.addEventListener("input", () => {
   if (nameInput.value.length === 0) {
-    gsap.to(".name-while-input", { display: "none" });
+    smallTextWhileNameInput.style.display = "none";
   } else {
-    gsap.to(".name-while-input", { display: "block" });
+    smallTextWhileNameInput.style.display = "block";
   }
 });
 
 surnameInput.addEventListener("input", () => {
   if (surnameInput.value.length === 0) {
-    gsap.to(".surname-while-input", { display: "none" });
+    smallTextWhileSurnameInput.style.display = "none";
   } else {
-    gsap.to(".surname-while-input", { display: "block" });
+    smallTextWhileSurnameInput.style.display = "block";
   }
 });
 
 emailInput.addEventListener("input", () => {
   if (emailInput.value.length === 0) {
-    gsap.to(".email-while-input", { display: "none" });
+    smallTextWhileEmailInput.style.display = "none";
   } else {
-    gsap.to(".email-while-input", { display: "block" });
+    smallTextWhileEmailInput.style.display = "block";
   }
 });
 
@@ -75,7 +81,7 @@ const validateForm = () => {
     surnameInputWrapper.style.border = "none";
   }
 
-  if (emailInput.value === "" || !validateEmail(emailInput.value )) {
+  if (emailInput.value === "" || !validateEmail(emailInput.value)) {
     emailInputWrapper.style.border = "2px solid red";
     contactValidationText.textContent = "Wprowadź mail poprawnie!";
     contactValidationText.style.color = "red";
