@@ -24,11 +24,10 @@
   margin: 0;
 }
 
+/* makes map round */
 #map {
   height: 140px;
-  /* The height is 400 pixels */
   width: 140px;
-  /* The width is the width of the web page */
   border-radius: 50%;
   margin-top: 30px;
 }
@@ -71,6 +70,8 @@
   margin-top: 20px;
   font-size: 10px;
 }
+
+/* desktop view */
 
 @media only screen and (min-width: 1220px){
   .final-sector-wrapper{

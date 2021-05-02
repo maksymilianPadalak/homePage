@@ -129,6 +129,7 @@
   transform: translateY(-3px);
 }
 
+/* tablet styling */
 @media only screen and (min-width: 700px) {
   .third-sector-wrapper h1 {
     font-size: 40px;
@@ -144,6 +145,7 @@
 
 }
 
+/* desktop styling */
 @media only screen and (min-width: 1300px) {
   .third-sector-wrapper {
     display: flex;

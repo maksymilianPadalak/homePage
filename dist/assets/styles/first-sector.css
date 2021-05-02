@@ -35,6 +35,8 @@
   justify-content: center;
 }
 
+/* this image is not displayed on phones and tablets */
+
 .first-sector-image-wrapper {
   display: none;
 }

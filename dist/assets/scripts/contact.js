@@ -1,15 +1,19 @@
-//functions that reveals small text when something is typed
+// all inputs in contact area
 
 const nameInput = document.getElementById("name-input");
 const surnameInput = document.getElementById("surname-input");
 const emailInput = document.getElementById("email-input");
 const messageInput = document.getElementById("message-input");
 
+// there is small text displaying on top of input, when input isn't empty
+// that's why inputs have to be wrapped in a div with this small text
+
 const nameInputWrapper = document.getElementById("name-input-wrapper");
 const surnameInputWrapper = document.getElementById("surname-input-wrapper");
 const emailInputWrapper = document.getElementById("email-input-wrapper");
 const messageInputWrapper = document.getElementById("message-input-wrapper");
 
+//small texts on top of inputs while inputs aren't empty
 const smallTextWhileNameInput = document.querySelector(".name-while-input");
 const smallTextWhileSurnameInput = document.querySelector(
   ".surname-while-input"
@@ -18,6 +22,8 @@ const smallTextWhileEmailInput = document.querySelector(".email-while-input");
 const smallTextWhileMessageInput = document.querySelector(
   ".message-while-input"
 );
+
+// small text display handler
 
 nameInput.addEventListener("input", () => {
   if (nameInput.value.length === 0) {
@@ -55,6 +61,8 @@ messageInput.addEventListener("input", () => {
 
 const checkboxUnchecked = document.getElementById("checkbox-unfilled");
 const checkboxChecked = document.getElementById("checkbox-filled");
+
+//by default checkbox in unchecked
 let checkBoxStatus = "unchecked";
 
 checkboxUnchecked.addEventListener("click", () => {
@@ -74,11 +82,14 @@ const contactValidationText = document.querySelector(
   ".contact-validation-text"
 );
 
+// checks if email is inputed correctly
+// returns bool
 const validateEmail = (email) => {
   const re = /\S+@\S+\.\S+/;
   return re.test(email);
 };
 
+// when input is wrongly provided, border turns red and error message appears
 const validateForm = () => {
   if (nameInput.value.trim() === "") {
     nameInputWrapper.style.border = "2px solid red";
@@ -87,6 +98,10 @@ const validateForm = () => {
       "Polę z imieniem nie powinno być puste.";
     return false;
   }
+
+  //if input is provided correctly border disapears
+  //trim chekcs, if multiple spaces haven't been inputed
+  //repeats for other inputs
   if (nameInput.value.trim() !== "") {
     nameInputWrapper.style.border = "none";
   }

@@ -12,6 +12,7 @@ const uluru = new google.maps.LatLng(52.403124, 16.9099901);
   const marker = new google.maps.Marker({
     position: uluru,
     map: map,
+    //icon changed according to design
     icon: 'icons/placeholder-filled-point.png'
   });
 }
