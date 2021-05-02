@@ -25,42 +25,31 @@ let currentSliderImg = 1;
 firstDot.style.backgroundColor = "#ffcd19";
 
 const changeImageToNext = () => {
-  gsap.to(sliderImages[currentSliderImg - 1], {
-    duration: 1.5,
-    opacity: 0,
-    display: "none",
-  });
+  sliderImages[currentSliderImg - 1].style.opacity = 0
+  
   dots[currentSliderImg - 1].style.backgroundColor = "white";
   if (currentSliderImg === 4) {
     currentSliderImg = 1;
   } else {
     currentSliderImg += 1;
   }
-  gsap.to(sliderImages[currentSliderImg - 1], {
-    duration: 1.5,
-    opacity: 1,
-    display: "block",
-  });
   dots[currentSliderImg - 1].style.backgroundColor = "#ffcd19";
-};
+  sliderImages[currentSliderImg - 1].style.opacity = 1
+  };
+
+
 
 const changeImageToPrevious = () => {
-  gsap.to(sliderImages[currentSliderImg - 1], {
-    duration: 1.5,
-    opacity: 0,
-    display: "none",
-  });
+  sliderImages[currentSliderImg - 1].style.visibility = "hidden"
+  sliderImages[currentSliderImg - 1].style.opacity = 0
   dots[currentSliderImg - 1].style.backgroundColor = "white";
   if (currentSliderImg === 1) {
     currentSliderImg = 4;
   } else {
     currentSliderImg -= 1;
   }
-  gsap.to(sliderImages[currentSliderImg - 1], {
-    duration: 1.5,
-    opacity: 1,
-    display: "block",
-  });
+  sliderImages[currentSliderImg - 1].style.visibility = "visible"
+  sliderImages[currentSliderImg - 1].style.opacity = 1
   dots[currentSliderImg - 1].style.backgroundColor = "#ffcd19";
 };
 
