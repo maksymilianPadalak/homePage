@@ -1,32 +1,22 @@
 //mobile menu handler
 
 const mobileMenuIcon = document.querySelector(".mobile-menu-icon-wrapper");
+const mobileMenu = document.querySelector('.mobile-menu-wrapper')
 const closeMobileMenuButton = document.querySelector(
   ".close-mobile-menu-wrapper"
 );
 
 mobileMenuIcon.addEventListener("click", () => {
-  gsap.to(".mobile-menu-wrapper", {
-    duration: 1,
-    display: "grid",
-    y: 300,
-  });
-  gsap.to(mobileMenuIcon, {
-    display: "none",
-    opacity: 0
-  });
+  mobileMenu.style.top = 0
+  mobileMenu.style.visibility = ('visible')
+  mobileMenuIcon.style.visibility = ('hidden')
+  mobileMenuIcon.style.opacity = 0
 });
 
 closeMobileMenuButton.addEventListener("click", () => {
-  gsap.to(".mobile-menu-wrapper", {
-    duration: 1,
-    display: "none",
-    y: -300,
-  });
-  gsap.to(mobileMenuIcon, {
-    display: "block",
-    opacity: 1
-  });
+  mobileMenu.style.top = '-300px'
+  mobileMenuIcon.style.visibility = ('visible')
+  mobileMenuIcon.style.opacity = 1
 });
 
 // When the user scrolls the page, execute myFunction
