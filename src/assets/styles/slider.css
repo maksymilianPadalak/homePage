@@ -60,7 +60,7 @@
   grid-template-columns: 10% 80% 10%;
 }
 
-.first-slider-texts {
+#slider-texts {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -71,18 +71,35 @@
   font-size: 25px;
 }
 
-.first-slider-texts p:first-child {
+#slider-texts p:first-child {
   color: white;
   font-weight: 60;
   margin: 0;
 }
 
-.first-slider-texts p:nth-child(2) {
+#slider-texts p:nth-child(2) {
   margin: none;
   color: rgb(49, 154, 240);
   font-weight: 80;
   margin: 0;
 }
+
+.first-slider-texts{
+  visibility: visible;
+}
+
+.second-slider-texts{
+  visibility: hidden;
+}
+
+.third-slider-texts{
+  visibility: hidden;
+}
+
+.fourth-slider-texts{
+  visibility: hidden;
+}
+
 
 .dots {
   grid-row-start: 2;
@@ -177,7 +194,7 @@
 /* Tablet styling */
 
 @media only screen and (min-width: 700px) {
-  .first-slider-texts p {
+  #slider-texts p {
     font-size: 30px;
   }
 
@@ -196,16 +213,17 @@
   .slider-buttons-wrapper {
     flex-direction: row;
   }
-  .first-slider-texts p {
+
+  #slider-texts p {
     margin-block-end: 0;
     margin-left: 0;
   }
 
-  .first-slider-texts p:first-child {
+  #slider-texts p:first-child {
     font-size: 50px;
   }
 
-  .first-slider-texts p:nth-child(2) {
+  #slider-texts p:nth-child(2) {
     font-size: 50px;
   }
 

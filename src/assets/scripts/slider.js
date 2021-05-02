@@ -15,6 +15,11 @@ const sliderImages = [
   fourthSliderImg,
 ];
 
+const firstSliderTexts = document.querySelector(".first-slider-texts")
+const secondSliderTexts = document.querySelector(".second-slider-texts")
+const thirdSliderTexts = document.querySelector(".third-slider-texts")
+const fourthSliderTexts = document.querySelector(".fourth-slider-texts")
+const sliderTexts = [firstSliderTexts, secondSliderTexts, thirdSliderTexts, fourthSliderTexts]
 //arrows
 
 const leftArrow = document.querySelector(".arrow-left");
@@ -31,28 +36,31 @@ let imageTimer = setInterval(() => {
 }, 5000);
 
 const changeImageToNext = () => {
-  sliderImages[currentSliderImg - 1].style.opacity = 0
-  
+  sliderImages[currentSliderImg - 1].style.opacity = 0;
+  sliderTexts[currentSliderImg -1].style.visibility = 'hidden';
   dots[currentSliderImg - 1].style.backgroundColor = "white";
   if (currentSliderImg === 4) {
     currentSliderImg = 1;
   } else {
     currentSliderImg += 1;
   }
+  sliderTexts[currentSliderImg -1].style.visibility = 'visible';
   dots[currentSliderImg - 1].style.backgroundColor = "#ffcd19";
   sliderImages[currentSliderImg - 1].style.opacity = 1
   };
 
 
 const changeImageToPrevious = () => {
-  sliderImages[currentSliderImg - 1].style.opacity = 0
+  sliderImages[currentSliderImg - 1].style.opacity = 0;
+  sliderTexts[currentSliderImg - 1].style.visibility = 'hidden'
   dots[currentSliderImg - 1].style.backgroundColor = "white";
   if (currentSliderImg === 1) {
     currentSliderImg = 4;
   } else {
     currentSliderImg -= 1;
   }
-  sliderImages[currentSliderImg - 1].style.opacity = 1
+  sliderImages[currentSliderImg - 1].style.opacity = 1;
+  sliderTexts[currentSliderImg - 1].style.visibility = 'visible'
   dots[currentSliderImg - 1].style.backgroundColor = "#ffcd19";
 };
 
