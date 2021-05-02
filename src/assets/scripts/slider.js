@@ -31,12 +31,6 @@ let imageTimer = setInterval(() => {
 }, 5000);
 
 const changeImageToNext = () => {
-  
-  clearInterval(imageTimer)
-  mageTimer = setInterval(() => {
-    changeImageToNext();
-  }, 5000);
-
   sliderImages[currentSliderImg - 1].style.opacity = 0
   
   dots[currentSliderImg - 1].style.backgroundColor = "white";
@@ -62,8 +56,23 @@ const changeImageToPrevious = () => {
   dots[currentSliderImg - 1].style.backgroundColor = "#ffcd19";
 };
 
-rightArrow.addEventListener("click", changeImageToNext);
-leftArrow.addEventListener("click", changeImageToPrevious);
+
+//reset the clock so every time user clicks on an arrow interval starts from 0
+
+rightArrow.addEventListener("click", () => {
+  clearInterval(imageTimer);
+  imageTimer = setInterval(() => {
+    changeImageToNext();
+  }, 5000);
+  changeImageToNext();
+});
+leftArrow.addEventListener("click",  () => {
+  clearInterval(imageTimer);
+  imageTimer = setInterval(() => {
+    changeImageToPrevious();
+  }, 5000);
+  changeImageToPrevious();
+});
 
 //function to change slider images easly when back-end is ready
 
