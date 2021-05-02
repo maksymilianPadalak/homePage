@@ -24,7 +24,19 @@ let currentSliderImg = 1;
 
 firstDot.style.backgroundColor = "#ffcd19";
 
+//function that changes images automatically
+
+let imageTimer = setInterval(() => {
+  changeImageToNext();
+}, 5000);
+
 const changeImageToNext = () => {
+  
+  clearInterval(imageTimer)
+  mageTimer = setInterval(() => {
+    changeImageToNext();
+  }, 5000);
+
   sliderImages[currentSliderImg - 1].style.opacity = 0
   
   dots[currentSliderImg - 1].style.backgroundColor = "white";
@@ -38,9 +50,7 @@ const changeImageToNext = () => {
   };
 
 
-
 const changeImageToPrevious = () => {
-  sliderImages[currentSliderImg - 1].style.visibility = "hidden"
   sliderImages[currentSliderImg - 1].style.opacity = 0
   dots[currentSliderImg - 1].style.backgroundColor = "white";
   if (currentSliderImg === 1) {
@@ -48,19 +58,12 @@ const changeImageToPrevious = () => {
   } else {
     currentSliderImg -= 1;
   }
-  sliderImages[currentSliderImg - 1].style.visibility = "visible"
   sliderImages[currentSliderImg - 1].style.opacity = 1
   dots[currentSliderImg - 1].style.backgroundColor = "#ffcd19";
 };
 
 rightArrow.addEventListener("click", changeImageToNext);
 leftArrow.addEventListener("click", changeImageToPrevious);
-
-//function that changes images automatically
-
-setInterval(() => {
-  changeImageToNext();
-}, 5000);
 
 //function to change slider images easly when back-end is ready
 

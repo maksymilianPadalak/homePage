@@ -38,9 +38,7 @@ const changeImageToNext = () => {
   };
 
 
-
 const changeImageToPrevious = () => {
-  sliderImages[currentSliderImg - 1].style.visibility = "hidden"
   sliderImages[currentSliderImg - 1].style.opacity = 0
   dots[currentSliderImg - 1].style.backgroundColor = "white";
   if (currentSliderImg === 1) {
@@ -48,7 +46,6 @@ const changeImageToPrevious = () => {
   } else {
     currentSliderImg -= 1;
   }
-  sliderImages[currentSliderImg - 1].style.visibility = "visible"
   sliderImages[currentSliderImg - 1].style.opacity = 1
   dots[currentSliderImg - 1].style.backgroundColor = "#ffcd19";
 };
