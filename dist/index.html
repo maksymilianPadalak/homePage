@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Crafton Recruitment</title>
   <link rel="stylesheet" href="assets/styles/general.css">
   <link rel="stylesheet" href="assets/styles/navbar.css">
   <link rel="stylesheet" href="assets/styles/slider.css">
@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/styles/third-sector.css">
   <link rel="stylesheet" href="assets/styles/contact.css">
   <link rel="stylesheet" href="assets/styles/final-sector.css">
+  <link rel="icon" type="image/png" href="./icons/UW-bialy.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +24,6 @@
       <img src="icons/UW-bialy.png" alt="">
     </div>
 
-    <div class="right-side-wrapper">
 
       <div class="desktop-menu-wrapper"
       data-aos="flip-up">
@@ -39,8 +39,6 @@
         <div class="mobile-menu-icon-element"></div>
         <div class="mobile-menu-icon-element"></div>
       </div>
-
-    </div>
 
 
   <div class="mobile-menu-wrapper">
@@ -76,14 +74,45 @@
 
     <div class="slider-navigation-wrapper"
     data-aos="fade-right">
-      <div class="first-slider-texts">
+
+      <div class="first-slider-texts" id="slider-texts">
+        <p>Bądź jak Elon Musk!</p>
+        <p>Dołącz do zespołu.</p>
+      </div>
+
+      <div class="second-slider-texts" id="slider-texts">
         <p>Będziesz się uczył z ciekawością.</p>
         <p>Obiecujemy.</p>
       </div>
 
-      <div class="slider-buttons-wrapper">
+      <div class="third-slider-texts" id="slider-texts">
+        <p>Pierwszy komercyjny lot w kosmos.</p>
+        <p>Wybierz planetę.</p>
+      </div>
+
+      <div class="fourth-slider-texts" id="slider-texts">
+        <p>Poznaj przyszłość transportu na świecie.</p>
+        <p>Szybciej i bezpieczniej.</p>
+      </div>
+
+      <div class="first-slider-buttons" id="slider-buttons-wrapper">
+        <button>TESLA</button>
+        <button>SPACE X</button>
+      </div>
+
+      <div class="second-slider-buttons" id="slider-buttons-wrapper">
         <button>ZOBACZ WIĘCEJ</button>
         <button>UMÓW SIĘ Z ANIOŁEM</button>
+      </div>
+
+      <div class="third-slider-buttons" id="slider-buttons-wrapper">
+        <button>MARS</button>
+        <button>SATURN</button>
+      </div>
+
+      <div class="fourth-slider-buttons" id="slider-buttons-wrapper">
+        <button>ZOBACZ WIĘCEJ</button>
+        <button>GALERIA</button>
       </div>
 
       <div class="arrows-wrapper">
@@ -353,7 +382,7 @@
 
 
 
-<!-- Third sector script has to bo loaded first because it contains google maps script -->
+<!-- Final sector script cannot be loaded with defer because it contains google maps script -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

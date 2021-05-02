@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Crafton Recruitment</title>
   <link rel="stylesheet" href="assets/styles/general.css">
   <link rel="stylesheet" href="assets/styles/navbar.css">
   <link rel="stylesheet" href="assets/styles/slider.css">
@@ -13,9 +13,15 @@
   <link rel="stylesheet" href="assets/styles/third-sector.css">
   <link rel="stylesheet" href="assets/styles/contact.css">
   <link rel="stylesheet" href="assets/styles/final-sector.css">
+  <link rel="icon" type="image/png" href="./icons/UW-bialy.png">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
+  <!-- data-aos is a plugin called Aos used for on scroll animations -->
+  <!-- https://michalsnik.github.io/aos/ find more info about it here-->
+
+  <!-- Navigation (menu, mobile menu). -->
 
   <div class="nav-bar-wrapper" id='navbar'>
     <div class="logo"
@@ -23,7 +29,6 @@
       <img src="icons/UW-bialy.png" alt="">
     </div>
 
-    <div class="right-side-wrapper">
 
       <div class="desktop-menu-wrapper"
       data-aos="flip-up">
@@ -40,8 +45,6 @@
         <div class="mobile-menu-icon-element"></div>
       </div>
 
-    </div>
-
 
   <div class="mobile-menu-wrapper">
     <div class="mobile-menu-links-wrapper">
@@ -52,10 +55,11 @@
     <a href="">Usługi</a>
   </div>
     <button class="close-mobile-menu-wrapper">
-      &#10006
+      &#10006;
   </div>
   </div>
 
+  <!-- slider with elements -->
   
   <div class="slider-wrapper">
 
@@ -136,6 +140,7 @@
     </div>
 
 
+    <!-- first section with text and image -->
 
       <div class="first-sector-wrapper">
 
@@ -187,6 +192,8 @@
         
       </div>
 
+      <!-- second section with text and image  -->
+
       <div class="second-sector-wrapper">
 
         <div class="second-sector-image-wrapper"
@@ -207,6 +214,8 @@
         </div>
 
       </div>
+<!-- 
+      third section with text and image -->
 
       <div class="third-sector-wrapper">
 
@@ -242,8 +251,10 @@
   
           <div class="third-sector-youtube-wrapper">
   
-            <button class="close-youtube-button">&#x2715</button>
+            <button class="close-youtube-button">&#x2715;</button>
   
+            <!-- youtube video -->
+
             <iframe
               src="https://www.youtube.com/embed/tgbNymZ7vqY">
            
@@ -257,6 +268,8 @@
       <div class="contact-wrapper">
         <h1>Nie znalazłeś odpowiedniego kontaktu?</h1>
         <p>Skorzystaj z formularza</p>
+
+        <!-- contact form  -->
 
         <form class="form-wrapper" method="POST" onsubmit="return validateForm()" action="empty.php">
 
@@ -293,13 +306,16 @@
 
         <div class="agreement">
           <div class="checkbox-wrapper">
+<!-- 
+            check-box canno't be styled with CSS so I uploaded two images, one blank and one with marker that change status (check out: contact.js file) -->
+
             <img src="icons/checkbox-unfilled.jpg" id="checkbox-unfilled">
             <img src="icons/checkbox-filled.jpg" id="checkbox-filled">
           </div>
           <p>Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.</p>
         </div>
 
-        <button class="send-button">WYŚLIJ</button>
+        <button type="submit" class="send-button">WYŚLIJ</button>
 
       </form>
 
@@ -318,7 +334,6 @@
           <!--The div element for the map -->
         <div id="map"></div>
     
-        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
         <script
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVWF-QV6CIQYaFMGe7wGCeFk_PBxCFr40&callback=initMap&libraries=&v=weekly"
           defer 
@@ -384,15 +399,18 @@
 
 
 
-<!-- Third sector script has to bo loaded first because it contains google maps script -->
+<!-- Final sector script cannot be loaded with defer because it contains google maps script and it produces a bug -->
+
+
+<!-- AOS is a plugin used for on scroll animations -->
+<!-- https://michalsnik.github.io/aos/ find more info about it here-->
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
 <script src="assets/scripts/slider.js" defer></script>
 <script src="assets/scripts/navbar.js" defer></script>
-<script src="assets/scripts/first-sector.js" defer></script>
-<script src="assets/scripts/second-sector.js" defer></script>
 <script src="assets/scripts/third-sector.js" defer></script>
 <script src="assets/scripts/contact.js" defer></script>
 <script src="assets/scripts/final-sector.js"></script> 

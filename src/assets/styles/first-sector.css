@@ -35,6 +35,8 @@
   justify-content: center;
 }
 
+/* this image is not displayed on phones and tablets */
+
 .first-sector-image-wrapper {
   display: none;
 }
@@ -75,7 +77,7 @@ ul {
 
 /* style for desktop */
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 1300px) {
   .first-sector-wrapper {
     justify-content: space-between;
   }

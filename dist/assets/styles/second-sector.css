@@ -46,7 +46,7 @@
 
 /* style for desktop */
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 1300px) {
   .second-sector-wrapper {
     justify-content: space-between;
   }

@@ -24,6 +24,7 @@
   text-align: center;
 }
 
+/* this image is not displayed on phones and tablets */
 .second-sector-image-wrapper {
   display: none;
 }
@@ -46,7 +47,7 @@
 
 /* style for desktop */
 
-@media only screen and (min-width: 1220px) {
+@media only screen and (min-width: 1300px) {
   .second-sector-wrapper {
     justify-content: space-between;
   }

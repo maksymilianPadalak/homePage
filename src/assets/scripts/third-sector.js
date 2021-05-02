@@ -3,6 +3,9 @@ const closeYouTubeButton = document.querySelector(".close-youtube-button")
 const youtubeVideo = document.querySelector('iframe')
 const youtubeWrapper = document.querySelector('.third-sector-youtube-wrapper')
 
+// youtube modal
+// remember to use display grid on youtube wrapper
+
 playButton.addEventListener('click', () => {
  youtubeWrapper.style.opacity = 1
  youtubeWrapper.style.display = 'grid'
