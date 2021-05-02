@@ -5,12 +5,12 @@ const youtubeWrapper = document.querySelector('.third-sector-youtube-wrapper')
 
 playButton.addEventListener('click', () => {
  youtubeWrapper.style.opacity = 1
- youtubeWrapper.style.display = 'grid'
+ youtubeWrapper.style.visibility = 'visible'
 })
 
 closeYouTubeButton.addEventListener('click', () => {
   youtubeWrapper.style.opacity = 0
-  youtubeWrapper.style.display = 'none'
+  youtubeWrapper.style.visibility = 'hidden'
   //video has to reset every time user closes modal
   youtubeVideo.src = ''
   youtubeVideo.src = "https://www.youtube.com/embed/tgbNymZ7vqY"

@@ -35,10 +35,23 @@ margin-top: 20px;
 width: 100vw;
 }
 
+.contact-wrapper input{
+  height: 30px;
+  border: none;
+  margin-left: 10px;
+}
+
+
 .contact-wrapper input:hover{
   cursor: pointer;
 }
 
+.contact-wrapper textarea{
+  border: none;
+  font-family: "Muli";
+  height: 180px;
+  margin-left: 10px;
+}
 
 .contact-wrapper textarea:hover{
   cursor: pointer;
@@ -62,14 +75,6 @@ width: 100vw;
   width: 90vw;
 }
 
-.contact-wrapper input{
-  height: 30px;
-  border: none;
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-
 .contact-textarea-wrapper{
   background-color: white;
   height: 200px;
@@ -79,57 +84,15 @@ width: 100vw;
   width: 90vw;
 }
 
-.contact-wrapper textarea{
-  border: none;
-  height: 180px;
-  margin-left: 10px;
-  font-family: "Muli";
-  font-size: 12px;
-  margin-top: 5px;
-}
-
 .agreement{
-  display: grid;
-  grid-template-columns: 8% 4% 88%;
+  display: flex;
+  flex-direction: row;
   width: 80vw;
 }
 
 .agreement p{
-  grid-column-start: 3;
-  grid-column-end: 4;
-
-  text-align: left;
+  text-align: center;
 }
-
-.checkbox-wrapper{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#checkbox-unfilled{
-  transform: scale(0.5);
-  display: block;
-}
-
-#checkbox-unfilled:hover{
-  cursor: pointer;
-}
-
-
-#checkbox-filled{
-  display: none;
-  transform: scale(0.5);
-}
-
-
-#checkbox-filled:hover{
-  cursor: pointer;
-}
-
 
 .send-button{
   border: 0px solid white;
@@ -213,10 +176,13 @@ width: 100vw;
   }
 
   .agreement{
+    display: flex;
+    flex-direction: row;
     width: 42vw;
   }
   
   .agreement p{
+    text-align: left;
     font-size: 12px;
   }
 

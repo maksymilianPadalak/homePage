@@ -10,63 +10,36 @@ const surnameInputWrapper = document.getElementById("surname-input-wrapper");
 const emailInputWrapper = document.getElementById("email-input-wrapper");
 const messageInputWrapper = document.getElementById("message-input-wrapper");
 
-const smallTextWhileNameInput = document.querySelector(".name-while-input");
-const smallTextWhileSurnameInput = document.querySelector(
-  ".surname-while-input"
-);
-const smallTextWhileEmailInput = document.querySelector(".email-while-input");
-const smallTextWhileMessageInput = document.querySelector(
-  ".message-while-input"
-);
-
 nameInput.addEventListener("input", () => {
   if (nameInput.value.length === 0) {
-    smallTextWhileNameInput.style.display = "none";
+    gsap.to(".name-while-input", { display: "none" });
   } else {
-    smallTextWhileNameInput.style.display = "block";
+    gsap.to(".name-while-input", { display: "block" });
   }
 });
 
 surnameInput.addEventListener("input", () => {
   if (surnameInput.value.length === 0) {
-    smallTextWhileSurnameInput.style.display = "none";
+    gsap.to(".surname-while-input", { display: "none" });
   } else {
-    smallTextWhileSurnameInput.style.display = "block";
+    gsap.to(".surname-while-input", { display: "block" });
   }
 });
 
 emailInput.addEventListener("input", () => {
   if (emailInput.value.length === 0) {
-    smallTextWhileEmailInput.style.display = "none";
+    gsap.to(".email-while-input", { display: "none" });
   } else {
-    smallTextWhileEmailInput.style.display = "block";
+    gsap.to(".email-while-input", { display: "block" });
   }
 });
 
 messageInput.addEventListener("input", () => {
   if (messageInput.value.length === 0) {
-    smallTextWhileMessageInput.style.display = "none";
+    gsap.to(".message-while-input", { display: "none" });
   } else {
-    smallTextWhileMessageInput.style.display = "block";
+    gsap.to(".message-while-input", { display: "block" });
   }
-});
-
-//checkbox handler (css doesnt't support checkbox styling, so I added a png that will change on click)
-
-const checkboxUnchecked = document.getElementById("checkbox-unfilled");
-const checkboxChecked = document.getElementById("checkbox-filled");
-let checkBoxStatus = "unchecked";
-
-checkboxUnchecked.addEventListener("click", () => {
-  checkBoxStatus = "checked";
-  checkboxUnchecked.style.display = "none";
-  checkboxChecked.style.display = "block";
-});
-
-checkboxChecked.addEventListener("click", () => {
-  checkBoxStatus = "unchecked";
-  checkboxChecked.style.display = "none";
-  checkboxUnchecked.style.display = "block";
 });
 
 // form validation
@@ -102,7 +75,7 @@ const validateForm = () => {
     surnameInputWrapper.style.border = "none";
   }
 
-  if (emailInput.value === "" || !validateEmail(emailInput.value)) {
+  if (emailInput.value === "" || !validateEmail(emailInput.value )) {
     emailInputWrapper.style.border = "2px solid red";
     contactValidationText.textContent = "Wprowadź mail poprawnie!";
     contactValidationText.style.color = "red";
@@ -123,7 +96,7 @@ const validateForm = () => {
     messageInputWrapper.style.border = "none";
   }
 
-  if (checkBoxStatus === "unchecked") {
+  if (document.querySelector(".checkbox").checked === false) {
     contactValidationText.textContent = "Zgoda musi zostać zaakceptowana.";
     contactValidationText.style.color = "red";
     return false;

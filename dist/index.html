@@ -18,15 +18,13 @@
 <body>
 
   <div class="nav-bar-wrapper" id='navbar'>
-    <div class="logo"
-    data-aos="flip-down">
+    <div class="logo">
       <img src="icons/UW-bialy.png" alt="">
     </div>
 
     <div class="right-side-wrapper">
 
-      <div class="desktop-menu-wrapper"
-      data-aos="flip-up">
+      <div class="desktop-menu-wrapper">
         <a href="">I stopnia</a>
         <a href="">II stopnia</a>
         <a href="">Podyplomowe</a>
@@ -73,9 +71,12 @@
         <img src="images/architecture-4756403.jpg" alt="train">
       </div>
     </div>
+   
+    <div class="first-slider-texts-and-buttons">
 
-    <div class="slider-navigation-wrapper"
-    data-aos="fade-right">
+    </div>
+
+    <div class="slider-navigation-wrapper">
       <div class="first-slider-texts">
         <p>Będziesz się uczył z ciekawością.</p>
         <p>Obiecujemy.</p>
@@ -261,10 +262,7 @@
           </div>
 
         <div class="agreement">
-          <div class="checkbox-wrapper">
-            <img src="icons/checkbox-unfilled.jpg" id="checkbox-unfilled">
-            <img src="icons/checkbox-filled.jpg" id="checkbox-filled">
-          </div>
+          <input type="checkbox" class="checkbox">
           <p>Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez Collegium Da Vinci i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.</p>
         </div>
 
@@ -277,8 +275,7 @@
       <div class="final-sector-wrapper">
 
         <div class="map-wrapper">
-          <div class="adress-wrapper"
-          data-aos="flip-up">
+          <div class="adress-wrapper">
             <p>ul. Głogowska 10</p>
             <p>61-719 Poznań</p>
             <p>tel. 61 27 11 000</p>
@@ -354,10 +351,6 @@
 
 
 <!-- Third sector script has to bo loaded first because it contains google maps script -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 <script src="assets/scripts/slider.js" defer></script>
 <script src="assets/scripts/navbar.js" defer></script>
 <script src="assets/scripts/first-sector.js" defer></script>
@@ -365,5 +358,9 @@
 <script src="assets/scripts/third-sector.js" defer></script>
 <script src="assets/scripts/contact.js" defer></script>
 <script src="assets/scripts/final-sector.js"></script> 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
