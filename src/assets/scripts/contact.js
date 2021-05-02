@@ -15,6 +15,9 @@ const smallTextWhileSurnameInput = document.querySelector(
   ".surname-while-input"
 );
 const smallTextWhileEmailInput = document.querySelector(".email-while-input");
+const smallTextWhileMessageInput = document.querySelector(
+  ".message-while-input"
+);
 
 nameInput.addEventListener("input", () => {
   if (nameInput.value.length === 0) {
@@ -42,10 +45,28 @@ emailInput.addEventListener("input", () => {
 
 messageInput.addEventListener("input", () => {
   if (messageInput.value.length === 0) {
-    gsap.to(".message-while-input", { display: "none" });
+    smallTextWhileMessageInput.style.display = "none";
   } else {
-    gsap.to(".message-while-input", { display: "block" });
+    smallTextWhileMessageInput.style.display = "block";
   }
+});
+
+//checkbox handler (css doesnt't support checkbox styling, so I added a png that will change on click)
+
+const checkboxUnchecked = document.getElementById("checkbox-unfilled");
+const checkboxChecked = document.getElementById("checkbox-filled");
+let checkBoxStatus = "unchecked";
+
+checkboxUnchecked.addEventListener("click", () => {
+  checkBoxStatus = "checked";
+  checkboxUnchecked.style.display = "none";
+  checkboxChecked.style.display = "block";
+});
+
+checkboxChecked.addEventListener("click", () => {
+  checkBoxStatus = "unchecked";
+  checkboxChecked.style.display = "none";
+  checkboxUnchecked.style.display = "block";
 });
 
 // form validation
@@ -102,7 +123,7 @@ const validateForm = () => {
     messageInputWrapper.style.border = "none";
   }
 
-  if (document.querySelector(".checkbox").checked === false) {
+  if (checkBoxStatus === "unchecked") {
     contactValidationText.textContent = "Zgoda musi zostać zaakceptowana.";
     contactValidationText.style.color = "red";
     return false;
