@@ -1,6 +1,5 @@
 const gulp = require("gulp");
 const imagemin = require('gulp-imagemin')
-const sourcemaps = require('gulp-sourcemaps')
 const { src, series, parallel, dest, watch } = require("gulp")
 
 const jsPath = 'src/assets/scripts/**/*.js'
@@ -33,7 +32,7 @@ function imgTask() {
 
 
 // function watchTask(){
-//   watch([cssPath, jsPath], {interval: 1000}, parallel(copyHtml, imgTask, jsTask, copyCss, copyFonts))
+//   watch([cssPath, jsPath], {interval: 1000}, parallel(copyHtml, imgTask, copyJS, copyCss, copyFonts))
 // }
 
 exports.default = parallel(copyHtml, copyFonts, imgTask, copyJs, copyCss, copyFonts, copyIcons)
