@@ -24,3 +24,10 @@ inside of the project dir
 ```
 npm install gulp --save-dev
 ```
+
+Image min configuration:
+```
+npm install --save-dev gulp-imagemin
+```
+
+Enjoy devepoling!
