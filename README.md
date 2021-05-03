@@ -28,5 +28,8 @@ Image min configuration:
 ```
 npm install --save-dev gulp-imagemin
 ```
-
+To run gulp script in project simply run
+```
+gulp
+```
 Enjoy devepoling!
