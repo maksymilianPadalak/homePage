@@ -1,6 +1,6 @@
-#Crafton recruitment task
+# Crafton recruitment task
 
-##Technologies used
+## Technologies used
 
 - HTML
 - CSS
