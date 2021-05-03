@@ -12,7 +12,7 @@ Aos configuration:
 https://michalsnik.github.io/aos/
 
 Gulp configuration:
-(Install Node.js if you don't have it: nodejs.org/download/.)
+(Install Node.js if you don't have it: nodejs.org/download/).
 ```
 npm install gulp-cli -g
 gulp -v
