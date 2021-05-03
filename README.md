@@ -12,4 +12,15 @@ Aos configuration:
 https://michalsnik.github.io/aos/
 
 Gulp configuration:
-https://gulpjs.com/
+Install Node.js
+nodejs.org/download/.
+```
+npm install gulp-cli -g
+gulp -v
+```
+
+inside of the project dir
+
+```
+npm install gulp --save-dev
+```
