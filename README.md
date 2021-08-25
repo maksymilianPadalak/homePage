@@ -1,4 +1,4 @@
-Open: https://craftonrecruitmenttask.netlify.app/
+Open: https://exemplaryhomepage.netlify.app/
 
 # Home Page
 
