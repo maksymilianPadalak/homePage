@@ -1,3 +1,5 @@
+Open: https://craftonrecruitmenttask.netlify.app/
+
 # Crafton recruitment task
 
 ## Technologies used
